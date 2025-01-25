@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", serif;
+}
+
+#root {
+  margin: 0 auto;
+}
+
+header {
+  margin: 0 auto;
+  position: relative;
+}
+header .backgound {
+  width: 100%;
+  height: 100vh;
+}
+header .backgound img {
+  width: 100%;
+  height: 100vh;
+}
+header .nav-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.768627451);
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem 10rem 0 10rem;
+}
+header .nav-main nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav-main nav img {
+  width: 10rem;
+}
+header .nav-main nav a {
+  background: #E50914;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+header .nav-main .header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 12rem;
+  line-height: 1.2;
+  text-align: center;
+}
+header .nav-main .header-content h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+header .nav-main .header-content p {
+  padding: 1rem 0;
+  font-weight: 400;
+}
+header .nav-main .header-content .subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+header .nav-main .header-content .subscribe label {
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem 1rem 0 1rem;
+  cursor: text;
+  flex: 1;
+  border-radius: 5px;
+}
+header .nav-main .header-content .subscribe label span {
+  font-size: 0.8rem;
+}
+header .nav-main .header-content .subscribe label input {
+  background: inherit;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0;
+}
+header .nav-main .header-content .subscribe button {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #E50914;
+  color: #fff;
+  font-family: "poppins";
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+header .nav-main .header-content .subscribe button:hover {
+  opacity: 0.85;
+}
+
+main {
+  background: #000;
+  color: #fff;
+}
+main .trends {
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+main .trends .trends-top {
+  height: 5rem;
+  border-radius: 200% 200% 0 0;
+  margin-top: -5rem;
+  width: 100%;
+  background: linear-gradient(to right, rgb(33, 13, 22) 16%, rgb(184, 40, 105), rgb(229, 9, 20), rgb(184, 40, 105), rgb(33, 13, 22) 84%);
+  background-clip: padding-box;
+  padding-top: 0.25rem;
+}
+main .trends .trends-top .strip {
+  height: 100%;
+  border-radius: 200% 200% 0 0;
+  background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+}
+main .trends h6 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 1rem;
+  padding: 0 10rem;
+}
+main .trends .trends-content {
+  padding: 0 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .trends .trends-content .btn {
+  background: rgba(100, 100, 100, 0.2588235294);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 3rem 0.1rem;
+  border-radius: 0.5rem;
+}
+main .trends .trends-content .btn:hover {
+  background: rgba(100, 100, 100, 0.6352941176);
+}
+main .trends .trends-content .left-button {
+  margin-right: 0.5rem;
+}
+main .trends .trends-content .right-button {
+  margin-left: 0.5rem;
+}
+main .trends .trends-content .trend-cards {
+  display: flex;
+  overflow: hidden;
+  gap: 0.7rem;
+  scrollbar-width: 1rem;
+}
+main .trends .trends-content .trend-cards .card {
+  border-radius: 1rem;
+  transform: scale(0.9);
+  transition-duration: 1s;
+}
+main .trends .trends-content .trend-cards .card img {
+  border-radius: inherit;
+}
+main .trends .trends-content .trend-cards .card:hover {
+  transform: scale(1);
+}
+main .reasons {
+  padding: 0 10rem;
+  margin-bottom: 2rem;
+}
+main .reasons h6 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+main .reasons .reasons-content {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+main .reasons .reasons-content .card1 {
+  padding: 1rem;
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  border-radius: 1rem;
+}
+main .reasons .reasons-content .card1 p {
+  padding: 1rem 0;
+}
+main .faqs {
+  margin: 1rem auto 0 auto;
+  padding: 2rem 10rem;
+}
+main .faqs h6 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+main .faqs .card2 {
+  background: rgba(100, 100, 100, 0.6392156863);
+  margin: 1rem auto 0 auto;
+}
+main .faqs .card2 .show-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+main .faqs .card2 .show-card .close {
+  display: none;
+  font-size: 3rem;
+}
+main .faqs .card2 .show-card .add {
+  font-size: 3rem;
+}
+main .faqs .card2 .show-card:hover {
+  background: rgba(100, 100, 100, 0.7843137255);
+}
+main .faqs .card2 p {
+  display: none;
+}
+
+footer {
+  padding: 0 10rem;
+  background: #000;
+  color: #fff;
+}
+footer .footer-top h4 {
+  padding: 3rem 0 2rem 0;
+  text-align: center;
+}
+footer .footer-top .subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+footer .footer-top .subscribe label {
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem 1rem 0 1rem;
+  cursor: text;
+  flex: 1;
+  border-radius: 5px;
+}
+footer .footer-top .subscribe label span {
+  font-size: 0.8rem;
+  background: inherit;
+}
+footer .footer-top .subscribe label input {
+  background: inherit;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0;
+}
+footer .footer-top .subscribe button {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #E50914;
+  color: #fff;
+  font-family: "poppins";
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+footer .footer-top .subscribe button:hover {
+  opacity: 0.85;
+}
+footer .footer-bottom {
+  padding-bottom: 2rem;
+}
+footer .footer-bottom .bottom-frame1 a {
+  color: #fff;
+  margin: 2rem 0;
+  display: inline-block;
+}
+footer .footer-bottom .footer-bottom-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+footer .footer-bottom .footer-bottom-content .card3 ul {
+  list-style-type: none;
+}
+footer .footer-bottom .footer-bottom-content .card3 ul li {
+  padding: 0.2rem 0;
+}
+footer .footer-bottom .footer-bottom-content .card3 ul li a {
+  color: white;
+}
+footer .footer-bottom .footer-bottom-content .card3 button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1rem;
+  background: #000;
+  border: 1px solid rgba(100, 100, 100, 0.2588235294);
+  color: white;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+/*# sourceMappingURL=App.css.map */
